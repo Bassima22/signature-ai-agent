@@ -16,6 +16,7 @@ COPY . .
 
 # 6. Initialize a fresh database inside the container
 RUN python database_setup.py
+RUN python data_extra.py
 
 # 7. Open the port Gradio uses
 EXPOSE 7860
